@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "org.proxykey/proxykey",
+  "description": "Issue, rotate and revoke scoped API-key passes for 25+ providers — the agent never sees a real key",
+  "repository": {
+    "url": "https://github.com/neostorm112-boop/proxykey-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://proxykey.org/en/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.proxykey.org/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token minted in the proxykey panel (https://app.proxykey.org, MCP section). Format: 'Bearer mcp_...'",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
