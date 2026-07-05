@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "proxykey": {
+      "url": "https://mcp.proxykey.org/mcp",
+      "headers": { "Authorization": "Bearer mcp_YOUR_TOKEN" }
+    }
+  }
+}
